@@ -6,6 +6,8 @@ import boston from "./logos/boston.png";
 import atlanta from "./logos/atlanta.png";
 import brooklyn from "./logos/brooklyn.png";
 import charlotte from "./logos/charlotte.png";
+import chicago from "./logos/chicago.png";
+import cleveland from "./logos/cleveland.png";
 
 function App() {
 	let [currentScore, setCurrentScore] = React.useState(0);
@@ -35,19 +37,32 @@ function App() {
 			image: charlotte,
 			clicked: false,
 		},
+		{
+			name: "chicago",
+			key: 5,
+			image: chicago,
+			clicked: false,
+		},
+		{
+			name: "cleveland",
+			key: 6,
+			image: cleveland,
+			clicked: false,
+		},
 	]);
 
 	function shuffle(array) {
 		return array.sort(() => Math.random() - 0.5);
 	}
 
+	React.useEffect(() => {
+		shuffleCards();
+	}, [currentScore]);
+
 	function shuffleCards() {
 		let newArr = [...cards];
 		let randomNewArr = shuffle(newArr);
 		setCards(randomNewArr);
-		// setCurrentScore((prevScore) => {
-		// 	return prevScore + 1;
-		// });
 	}
 
 	function testShuffle(event) {
@@ -57,6 +72,7 @@ function App() {
 				return card.key === id ? { ...card, clicked: true } : card;
 			})
 		);
+		setCurrentScore((previousScore) => previousScore + 1);
 	}
 	console.log(cards);
 
