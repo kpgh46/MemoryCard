@@ -6,3 +6,7 @@ header{
   background-color: #1d428a;
   color: white;
 }
+
+.card-container{
+  display: flex;
+}

@@ -33,10 +33,20 @@ function App() {
 		},
 	]);
 
+	function shuffle(array) {
+		return array.sort(() => Math.random() - 0.5);
+	}
+
+	function testShuffle() {
+		let newArr = [...cards];
+		let randomNewArr = shuffle(newArr);
+		setCards(randomNewArr);
+	}
+
 	return (
 		<div>
 			<Header currentScore={currentScore} highScore={highScore} />
-			<Card cards={cards} />
+			<Card cards={cards} shuffle={testShuffle} />
 		</div>
 	);
 }
