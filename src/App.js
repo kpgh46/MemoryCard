@@ -8,8 +8,8 @@ import brooklyn from "./logos/brooklyn.png";
 import charlotte from "./logos/charlotte.png";
 
 function App() {
-	let [currentScore, setCurrentScore] = React.useState(5);
-	let [highScore, setHighScore] = React.useState(2);
+	let [currentScore, setCurrentScore] = React.useState(0);
+	let [highScore, setHighScore] = React.useState(0);
 	let [cards, setCards] = React.useState([
 		{
 			name: "atlanta",
@@ -18,7 +18,7 @@ function App() {
 			clicked: false,
 		},
 		{
-			name: "chicago",
+			name: "boston",
 			key: 2,
 			image: boston,
 			clicked: false,
@@ -45,12 +45,25 @@ function App() {
 		let newArr = [...cards];
 		let randomNewArr = shuffle(newArr);
 		setCards(randomNewArr);
+		// setCurrentScore((prevScore) => {
+		// 	return prevScore + 1;
+		// });
 	}
+
+	function testShuffle(event) {
+		let id = parseInt(event.target.id);
+		setCards((previousCards) =>
+			previousCards.map((card) => {
+				return card.key === id ? { ...card, clicked: true } : card;
+			})
+		);
+	}
+	console.log(cards);
 
 	return (
 		<div>
 			<Header currentScore={currentScore} highScore={highScore} />
-			<Card cards={cards} shuffle={shuffleCards} />
+			<Card cards={cards} shuffle={testShuffle} />
 		</div>
 	);
 }
