@@ -23,24 +23,20 @@ function App() {
 		},
 		{
 			name: "brooklyn",
-			id: 2,
+			id: 3,
 			image: brooklyn,
 		},
 		{
 			name: "charlotte",
-			id: 2,
+			id: 4,
 			image: charlotte,
 		},
 	]);
 
-	let allCards = cards.map((item) => {
-		return <Card image={item.image} />;
-	});
-
 	return (
 		<div>
 			<Header currentScore={currentScore} highScore={highScore} />
-			{allCards}
+			<Card cards={cards} />
 		</div>
 	);
 }
