@@ -3,7 +3,7 @@ import React from "react";
 export default function Card(props) {
 	let allCards = props.cards.map((card) => {
 		return (
-			<div onClick={props.shuffle}>
+			<div onClick={props.shuffle} key={card.key}>
 				<img src={card.image}></img>
 			</div>
 		);

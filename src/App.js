@@ -13,23 +13,27 @@ function App() {
 	let [cards, setCards] = React.useState([
 		{
 			name: "atlanta",
-			id: 1,
+			key: 1,
 			image: atlanta,
+			clicked: false,
 		},
 		{
 			name: "chicago",
-			id: 2,
+			key: 2,
 			image: boston,
+			clicked: false,
 		},
 		{
 			name: "brooklyn",
-			id: 3,
+			key: 3,
 			image: brooklyn,
+			clicked: false,
 		},
 		{
 			name: "charlotte",
-			id: 4,
+			key: 4,
 			image: charlotte,
+			clicked: false,
 		},
 	]);
 
@@ -37,7 +41,7 @@ function App() {
 		return array.sort(() => Math.random() - 0.5);
 	}
 
-	function testShuffle() {
+	function shuffleCards() {
 		let newArr = [...cards];
 		let randomNewArr = shuffle(newArr);
 		setCards(randomNewArr);
@@ -46,7 +50,7 @@ function App() {
 	return (
 		<div>
 			<Header currentScore={currentScore} highScore={highScore} />
-			<Card cards={cards} shuffle={testShuffle} />
+			<Card cards={cards} shuffle={shuffleCards} />
 		</div>
 	);
 }
