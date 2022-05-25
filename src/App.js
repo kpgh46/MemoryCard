@@ -10,9 +10,7 @@ import chicago from "./logos/chicago.png";
 import cleveland from "./logos/cleveland.png";
 
 function App() {
-	let [currentScore, setCurrentScore] = React.useState(0);
-	let [highScore, setHighScore] = React.useState(0);
-	let [cards, setCards] = React.useState([
+	let defaultCards = [
 		{
 			name: "atlanta",
 			key: 1,
@@ -49,7 +47,11 @@ function App() {
 			image: cleveland,
 			clicked: false,
 		},
-	]);
+	];
+
+	let [currentScore, setCurrentScore] = React.useState(0);
+	let [highScore, setHighScore] = React.useState(0);
+	let [cards, setCards] = React.useState(defaultCards);
 
 	function shuffle(array) {
 		return array.sort(() => Math.random() - 0.5);
@@ -69,6 +71,8 @@ function App() {
 		});
 
 		setCurrentScore(0);
+
+		setCards(defaultCards);
 	}
 
 	function shuffleCards() {
@@ -86,6 +90,7 @@ function App() {
 
 		if (selectedCard[0].clicked) {
 			reset();
+			return;
 		}
 
 		setCards((previousCards) =>
