@@ -27,7 +27,6 @@ function App() {
 		});
 
 		setCurrentScore(0);
-
 		setCards(cardData);
 	}
 
@@ -37,7 +36,7 @@ function App() {
 		setCards(randomNewArr);
 	}
 
-	function testShuffle(event) {
+	function handleClick(event) {
 		let id = parseInt(event.target.id);
 
 		let selectedCard = cards.filter((card) => {
@@ -61,7 +60,7 @@ function App() {
 	return (
 		<div>
 			<Header currentScore={currentScore} highScore={highScore} />
-			<Card cards={cards} shuffle={testShuffle} />
+			<Card cards={cards} shuffle={handleClick} />
 		</div>
 	);
 }
