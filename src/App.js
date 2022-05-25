@@ -2,70 +2,12 @@ import "./App.css";
 import React from "react";
 import Header from "./components/Header";
 import Card from "./components/Card";
-import boston from "./logos/boston.png";
-import atlanta from "./logos/atlanta.png";
-import brooklyn from "./logos/brooklyn.png";
-import charlotte from "./logos/charlotte.png";
-import chicago from "./logos/chicago.png";
-import cleveland from "./logos/cleveland.png";
-import dallas from "./logos/dallas.png";
-import denver from "./logos/denver.png";
+import cardData from "./cardData";
 
 function App() {
-	let defaultCards = [
-		{
-			name: "atlanta",
-			key: 1,
-			image: atlanta,
-			clicked: false,
-		},
-		{
-			name: "boston",
-			key: 2,
-			image: boston,
-			clicked: false,
-		},
-		{
-			name: "brooklyn",
-			key: 3,
-			image: brooklyn,
-			clicked: false,
-		},
-		{
-			name: "charlotte",
-			key: 4,
-			image: charlotte,
-			clicked: false,
-		},
-		{
-			name: "chicago",
-			key: 5,
-			image: chicago,
-			clicked: false,
-		},
-		{
-			name: "cleveland",
-			key: 6,
-			image: cleveland,
-			clicked: false,
-		},
-		{
-			name: "dallas",
-			key: 7,
-			image: dallas,
-			clicked: false,
-		},
-		{
-			name: "denver",
-			key: 8,
-			image: denver,
-			clicked: false,
-		},
-	];
-
 	let [currentScore, setCurrentScore] = React.useState(0);
 	let [highScore, setHighScore] = React.useState(0);
-	let [cards, setCards] = React.useState(defaultCards);
+	let [cards, setCards] = React.useState(cardData);
 
 	function shuffle(array) {
 		return array.sort(() => Math.random() - 0.5);
@@ -86,7 +28,7 @@ function App() {
 
 		setCurrentScore(0);
 
-		setCards(defaultCards);
+		setCards(cardData);
 	}
 
 	function shuffleCards() {
