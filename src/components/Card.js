@@ -9,10 +9,5 @@ export default function Card(props) {
 		);
 	});
 
-	return (
-		<div className="card-container">
-			{allCards}
-			<button onClick={props.shuffle}>Shuffle!</button>
-		</div>
-	);
+	return <div className="card-container">{allCards}</div>;
 }
