@@ -4,7 +4,7 @@ export default function Header(props) {
 	return (
 		<div>
 			<header>
-				<h3>NBA Memory Card Game</h3>
+				<h2>NBA Memory Card Game</h2>
 				<div className="scoreboard">
 					<div>Current Score: {props.currentScore}</div>
 					<div>High Score: {props.highScore}</div>
