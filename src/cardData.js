@@ -54,18 +54,6 @@ let levelOne = [
 		image: charlotte,
 		clicked: false,
 	},
-	{
-		name: "chicago",
-		key: 5,
-		image: chicago,
-		clicked: false,
-	},
-	{
-		name: "cleveland",
-		key: 6,
-		image: cleveland,
-		clicked: false,
-	},
 ];
 
 let levelTwo = [
@@ -117,82 +105,10 @@ let levelTwo = [
 		image: indiana,
 		clicked: false,
 	},
-	{
-		name: "la_clippers",
-		key: 13,
-		image: la_clippers,
-		clicked: false,
-	},
-	{
-		name: "la_lakers",
-		key: 14,
-		image: la_lakers,
-		clicked: false,
-	},
-	{
-		name: "memphis",
-		key: 15,
-		image: memphis,
-		clicked: false,
-	},
-	{
-		name: "miami",
-		key: 16,
-		image: miami,
-		clicked: false,
-	},
 ];
 
 let levelThree = [
 	{
-		name: "chicago",
-		key: 5,
-		image: chicago,
-		clicked: false,
-	},
-	{
-		name: "cleveland",
-		key: 6,
-		image: cleveland,
-		clicked: false,
-	},
-	{
-		name: "dallas",
-		key: 7,
-		image: dallas,
-		clicked: false,
-	},
-	{
-		name: "denver",
-		key: 8,
-		image: denver,
-		clicked: false,
-	},
-	{
-		name: "detriot",
-		key: 9,
-		image: detroit,
-		clicked: false,
-	},
-	{
-		name: "golden_state",
-		key: 10,
-		image: golden_state,
-		clicked: false,
-	},
-	{
-		name: "houston",
-		key: 11,
-		image: houston,
-		clicked: false,
-	},
-	{
-		name: "indiana",
-		key: 12,
-		image: indiana,
-		clicked: false,
-	},
-	{
 		name: "la_clippers",
 		key: 13,
 		image: la_clippers,
@@ -216,6 +132,90 @@ let levelThree = [
 		image: miami,
 		clicked: false,
 	},
+	{
+		name: "milwaukee",
+		key: 17,
+		image: milwaukee,
+		clicked: false,
+	},
+	{
+		name: "minnesota",
+		key: 18,
+		image: minnesota,
+		clicked: false,
+	},
+	{
+		name: "new_orleans",
+		key: 19,
+		image: new_orleans,
+		clicked: false,
+	},
+	{
+		name: "new_york",
+		key: 20,
+		image: new_york,
+		clicked: false,
+	},
+	{
+		name: "oklahoma_city",
+		key: 21,
+		image: oklahoma_city,
+		clicked: false,
+	},
+	{
+		name: "orlando",
+		key: 22,
+		image: orlando,
+		clicked: false,
+	},
+	{
+		name: "philadelphia",
+		key: 23,
+		image: philadelphia,
+		clicked: false,
+	},
+	{
+		name: "phoenix",
+		key: 24,
+		image: phoenix,
+		clicked: false,
+	},
+	{
+		name: "portland",
+		key: 25,
+		image: portland,
+		clicked: false,
+	},
+	{
+		name: "sacramento",
+		key: 26,
+		image: sacramento,
+		clicked: false,
+	},
+	{
+		name: "san_antonio",
+		key: 27,
+		image: san_antonio,
+		clicked: false,
+	},
+	{
+		name: "toronto",
+		key: 28,
+		image: toronto,
+		clicked: false,
+	},
+	{
+		name: "utah",
+		key: 29,
+		image: utah,
+		clicked: false,
+	},
+	{
+		name: "washington",
+		key: 30,
+		image: washington,
+		clicked: false,
+	},
 ];
 
-export { levelOne, levelTwo };
+export { levelOne, levelTwo, levelThree };

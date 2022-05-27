@@ -33,6 +33,7 @@ header{
 
 img{
   height: 150px;
+  width: 160px;
 }
 
 .image-container{
@@ -42,6 +43,6 @@ img{
   /* border: 1px solid red; */
   height: 200px;
   width: 200px;
-  margin: 5px;
+  margin: 2px;
 }
 

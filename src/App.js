@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 import Header from "./components/Header";
 import Card from "./components/Card";
-import { levelOne, levelTwo } from "./cardData";
+import { levelOne, levelTwo, levelThree } from "./cardData";
 
 function App() {
 	let [currentScore, setCurrentScore] = React.useState(0);
@@ -24,6 +24,10 @@ function App() {
 	React.useEffect(() => {
 		if (currentScore === 2) {
 			setCards(levelTwo);
+		}
+
+		if (currentScore === 4) {
+			setCards(levelThree);
 		}
 	}, [currentScore]);
 
