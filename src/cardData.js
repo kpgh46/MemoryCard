@@ -15,32 +15,7 @@ import la_lakers from "./logos/la_lakers.png";
 import memphis from "./logos/memphis.png";
 import miami from "./logos/miami.png";
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default [
-	{
-		name: "atlanta",
-		key: 1,
-		image: atlanta,
-		clicked: false,
-	},
-	{
-		name: "boston",
-		key: 2,
-		image: boston,
-		clicked: false,
-	},
-	{
-		name: "brooklyn",
-		key: 3,
-		image: brooklyn,
-		clicked: false,
-	},
-	{
-		name: "charlotte",
-		key: 4,
-		image: charlotte,
-		clicked: false,
-	},
+let levelTwo = [
 	{
 		name: "chicago",
 		key: 5,
@@ -114,3 +89,32 @@ export default [
 		clicked: false,
 	},
 ];
+
+let levelOne = [
+	{
+		name: "atlanta",
+		key: 1,
+		image: atlanta,
+		clicked: false,
+	},
+	{
+		name: "boston",
+		key: 2,
+		image: boston,
+		clicked: false,
+	},
+	{
+		name: "brooklyn",
+		key: 3,
+		image: brooklyn,
+		clicked: false,
+	},
+	{
+		name: "charlotte",
+		key: 4,
+		image: charlotte,
+		clicked: false,
+	},
+];
+
+export { levelOne, levelTwo };

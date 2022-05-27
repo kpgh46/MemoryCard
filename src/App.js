@@ -2,12 +2,12 @@ import "./App.css";
 import React from "react";
 import Header from "./components/Header";
 import Card from "./components/Card";
-import cardData from "./cardData";
+import { levelOne, levelTwo } from "./cardData";
 
 function App() {
 	let [currentScore, setCurrentScore] = React.useState(0);
 	let [highScore, setHighScore] = React.useState(0);
-	let [cards, setCards] = React.useState(cardData);
+	let [cards, setCards] = React.useState(levelOne);
 
 	function shuffle(array) {
 		return array.sort(() => Math.random() - 0.5);
@@ -27,7 +27,7 @@ function App() {
 		});
 
 		setCurrentScore(0);
-		setCards(cardData);
+		setCards(levelOne);
 	}
 
 	function shuffleCards() {
