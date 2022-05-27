@@ -21,6 +21,12 @@ function App() {
 		[highScore]
 	);
 
+	React.useEffect(() => {
+		if (currentScore === 2) {
+			setCards(levelTwo);
+		}
+	}, [currentScore]);
+
 	function reset() {
 		setHighScore((score) => {
 			return currentScore > score ? currentScore : score;
@@ -58,12 +64,6 @@ function App() {
 		setCurrentScore((previousScore) => previousScore + 1);
 	}
 	console.log(cards);
-
-	React.useEffect(() => {
-		if (currentScore === 2) {
-			setCards(levelTwo);
-		}
-	}, [currentScore]);
 
 	return (
 		<div>

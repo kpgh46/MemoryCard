@@ -14,6 +14,59 @@ import la_clippers from "./logos/la_clippers.png";
 import la_lakers from "./logos/la_lakers.png";
 import memphis from "./logos/memphis.png";
 import miami from "./logos/miami.png";
+import milwaukee from "./logos/milwaukee.png";
+import minnesota from "./logos/minnesota.png";
+import new_orleans from "./logos/new_orleans.png";
+import new_york from "./logos/new_york.png";
+import oklahoma_city from "./logos/oklahoma_city.png";
+import orlando from "./logos/orlando.png";
+import philadelphia from "./logos/philadelphia.png";
+import phoenix from "./logos/phoenix.png";
+import portland from "./logos/portland.png";
+import sacramento from "./logos/sacramento.png";
+import san_antonio from "./logos/san_antonio.png";
+import toronto from "./logos/toronto.png";
+import utah from "./logos/utah.png";
+import washington from "./logos/washington.png";
+
+let levelOne = [
+	{
+		name: "atlanta",
+		key: 1,
+		image: atlanta,
+		clicked: false,
+	},
+	{
+		name: "boston",
+		key: 2,
+		image: boston,
+		clicked: false,
+	},
+	{
+		name: "brooklyn",
+		key: 3,
+		image: brooklyn,
+		clicked: false,
+	},
+	{
+		name: "charlotte",
+		key: 4,
+		image: charlotte,
+		clicked: false,
+	},
+	{
+		name: "chicago",
+		key: 5,
+		image: chicago,
+		clicked: false,
+	},
+	{
+		name: "cleveland",
+		key: 6,
+		image: cleveland,
+		clicked: false,
+	},
+];
 
 let levelTwo = [
 	{
@@ -90,29 +143,77 @@ let levelTwo = [
 	},
 ];
 
-let levelOne = [
+let levelThree = [
 	{
-		name: "atlanta",
-		key: 1,
-		image: atlanta,
+		name: "chicago",
+		key: 5,
+		image: chicago,
 		clicked: false,
 	},
 	{
-		name: "boston",
-		key: 2,
-		image: boston,
+		name: "cleveland",
+		key: 6,
+		image: cleveland,
 		clicked: false,
 	},
 	{
-		name: "brooklyn",
-		key: 3,
-		image: brooklyn,
+		name: "dallas",
+		key: 7,
+		image: dallas,
 		clicked: false,
 	},
 	{
-		name: "charlotte",
-		key: 4,
-		image: charlotte,
+		name: "denver",
+		key: 8,
+		image: denver,
+		clicked: false,
+	},
+	{
+		name: "detriot",
+		key: 9,
+		image: detroit,
+		clicked: false,
+	},
+	{
+		name: "golden_state",
+		key: 10,
+		image: golden_state,
+		clicked: false,
+	},
+	{
+		name: "houston",
+		key: 11,
+		image: houston,
+		clicked: false,
+	},
+	{
+		name: "indiana",
+		key: 12,
+		image: indiana,
+		clicked: false,
+	},
+	{
+		name: "la_clippers",
+		key: 13,
+		image: la_clippers,
+		clicked: false,
+	},
+	{
+		name: "la_lakers",
+		key: 14,
+		image: la_lakers,
+		clicked: false,
+	},
+	{
+		name: "memphis",
+		key: 15,
+		image: memphis,
+		clicked: false,
+	},
+	{
+		name: "miami",
+		key: 16,
+		image: miami,
 		clicked: false,
 	},
 ];
