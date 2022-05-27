@@ -32,7 +32,9 @@ function App() {
 
 	function shuffleCards() {
 		let newArr = [...cards];
+
 		let randomNewArr = shuffle(newArr);
+
 		setCards(randomNewArr);
 	}
 
@@ -56,6 +58,12 @@ function App() {
 		setCurrentScore((previousScore) => previousScore + 1);
 	}
 	console.log(cards);
+
+	React.useEffect(() => {
+		if (currentScore === 2) {
+			setCards(levelTwo);
+		}
+	}, [currentScore]);
 
 	return (
 		<div>
